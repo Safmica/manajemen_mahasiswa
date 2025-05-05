@@ -35,7 +35,7 @@ class MahasiswaController extends Controller
 
     public function show($id)
     {
-        $mahasiswa = Mahasiswa::findOrFail($id);
+        $mahasiswa = Mahasiswa::with('prodi.jurusan.fakultas')->findOrFail($id);
         return response()->json($mahasiswa);
     }
 
