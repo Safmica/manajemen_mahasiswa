@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Jurusan extends Model
+class Jurusans extends Model
 {
     use HasFactory;
 
@@ -19,6 +19,6 @@ class Jurusan extends Model
 
     public function prodis()
     {
-        return $this->hasMany(Prodi::class);
+        return $this->hasMany(Prodis::class);
     }
 }

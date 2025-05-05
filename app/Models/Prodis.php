@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Prodi extends Model
+class Prodis extends Model
 {
     use HasFactory;
 
@@ -14,7 +14,7 @@ class Prodi extends Model
 
     public function jurusan()
     {
-        return $this->belongsTo(Jurusan::class);
+        return $this->belongsTo(Jurusans::class);
     }
 
     public function mahasiswas()
